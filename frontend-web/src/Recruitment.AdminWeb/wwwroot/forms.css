@@ -1,0 +1,1408 @@
+/* ============================================
+   FORMS CSS - All Form Styles
+   Login, Registration, and General Forms
+   ============================================ */
+
+/* ============================================
+   General Form Styles
+   ============================================ */
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1.5px solid #e0e0e0;
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.form-select {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 0.625rem 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.125rem;
+    pointer-events: none;
+}
+
+.form-check-input {
+    border-radius: 4px;
+    border: 1.5px solid #ced4da;
+    transition: all 0.2s ease;
+}
+
+.form-check-input:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.form-check-label {
+    font-size: 0.9rem;
+    color: #333;
+    cursor: pointer;
+}
+
+/* ============================================
+   Zoho-Style Login Page
+   ============================================ */
+
+.zoho-style-login-page {
+    min-height: 100vh;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.zoho-login-container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.zoho-login-wrapper {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.zoho-login-left {
+    flex: 0 0 50%;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #e0e0e0;
+}
+
+.zoho-login-form-section {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Logo Section */
+.zoho-logo-section {
+    text-align: center;
+}
+
+.zoho-logo {
+    display: inline-block;
+}
+
+.logo-squares {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.logo-square {
+    width: 32px;
+    height: 32px;
+    border: 3px solid;
+    border-radius: 4px;
+}
+
+.logo-square-red {
+    border-color: #e74c3c;
+}
+
+.logo-square-green {
+    border-color: #27ae60;
+}
+
+.logo-square-blue {
+    border-color: #3498db;
+}
+
+.logo-square-yellow {
+    border-color: #f39c12;
+}
+
+.zoho-logo-text {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* Sign-in Header */
+.zoho-signin-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.zoho-signin-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.25rem 0 0 0;
+}
+
+.btn-smart-signin {
+    background: #007bff;
+    border: none;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.btn-smart-signin:hover {
+    background: #0056b3;
+}
+
+.smart-icon {
+    font-size: 1rem;
+}
+
+.sparkle-icon {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 1rem;
+    animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.1); }
+}
+
+/* Input */
+.zoho-input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.zoho-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Next Button */
+.btn-next {
+    background: #007bff;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.875rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-next:hover {
+    background: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Social Icons */
+.zoho-social-section {
+    margin-top: 2rem;
+}
+
+.zoho-social-title {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.zoho-social-icons {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.zoho-social-icon {
+    width: 48px;
+    height: 48px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.zoho-social-icon:hover {
+    border-color: #007bff;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-google {
+    background: linear-gradient(135deg, #4285f4 0%, #34a853 50%, #fbbc05 75%, #ea4335 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.social-facebook {
+    color: #1877f2;
+}
+
+.social-linkedin {
+    color: #0077b5;
+}
+
+.social-x {
+    color: #000;
+}
+
+.social-apple {
+    font-size: 1.5rem;
+}
+
+.social-microsoft {
+    background: linear-gradient(135deg, #f25022 0%, #7fba00 50%, #00a4ef 75%, #ffb900 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.social-shokai {
+    background: linear-gradient(135deg, #7b2cbf 0%, #9d4edd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.social-more {
+    color: #666;
+    font-size: 1.5rem;
+}
+
+/* Sign up link */
+.zoho-signup-link {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.zoho-signup-text {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.zoho-signup-text:hover {
+    text-decoration: underline;
+}
+
+/* Right Section - Promotion */
+.zoho-login-right {
+    flex: 0 0 50%;
+    padding: 3rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zoho-promo-section {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* Illustration */
+.zoho-illustration {
+    position: relative;
+    height: 300px;
+    margin-bottom: 2rem;
+}
+
+.illustration-laptop {
+    position: relative;
+    width: 200px;
+    height: 140px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.laptop-screen {
+    width: 180px;
+    height: 110px;
+    background: #1a1a1a;
+    border-radius: 8px 8px 0 0;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+}
+
+.screen-content {
+    background: white;
+    border-radius: 4px;
+    padding: 0.75rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.email-bubble {
+    font-size: 0.75rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.lock-icon {
+    font-size: 0.875rem;
+}
+
+.fingerprint-icon {
+    font-size: 2rem;
+}
+
+.laptop-base {
+    width: 200px;
+    height: 8px;
+    background: #333;
+    border-radius: 0 0 4px 4px;
+    margin: 0 auto;
+}
+
+.illustration-person-left {
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+    z-index: 1;
+}
+
+.illustration-person-right {
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+    z-index: 1;
+}
+
+.person-head {
+    width: 40px;
+    height: 40px;
+    background: #ffdbac;
+    border-radius: 50%;
+    margin: 0 auto 0.5rem;
+}
+
+.person-body {
+    width: 50px;
+    height: 60px;
+    background: #007bff;
+    border-radius: 25px 25px 8px 8px;
+    margin: 0 auto;
+}
+
+.thought-bubble {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+}
+
+.person-tablet {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    font-size: 1.5rem;
+}
+
+/* Promo Content */
+.zoho-promo-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.zoho-promo-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.btn-learn-more {
+    background: #e3f2fd;
+    border: none;
+    color: #007bff;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    background: #bbdefb;
+}
+
+/* Pagination Dots */
+.zoho-pagination-dots {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.dot-active {
+    background: #007bff;
+    width: 24px;
+    border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .zoho-login-wrapper {
+        flex-direction: column;
+    }
+    
+    .zoho-login-left {
+        flex: 1;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 2.5rem;
+    }
+    
+    .zoho-login-right {
+        flex: 1;
+        padding: 2.5rem;
+    }
+    
+    .zoho-illustration {
+        height: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .zoho-style-login-page {
+        padding: 1rem 0.5rem;
+    }
+    
+    .zoho-login-wrapper {
+        border-radius: 8px;
+    }
+    
+    .zoho-login-left,
+    .zoho-login-right {
+        padding: 2rem 1.5rem;
+    }
+    
+    .zoho-signin-title {
+        font-size: 1.75rem;
+    }
+    
+    .btn-smart-signin {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.75rem;
+    }
+    
+    .zoho-illustration {
+        height: 200px;
+    }
+    
+    .illustration-laptop {
+        width: 150px;
+        height: 110px;
+    }
+    
+    .laptop-screen {
+        width: 135px;
+        height: 85px;
+    }
+}
+
+/* ============================================
+   Login Modal Overlay Styles
+   ============================================ */
+
+.login-layout-wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+.login-background-blur {
+    filter: blur(5px);
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    background: #f8f9fa;
+}
+
+.login-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.login-modal-container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-modal-box {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 950px;
+    max-height: 90vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #dc3545;
+    border: none;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.login-modal-close:hover {
+    background: #c82333;
+    transform: scale(1.1);
+}
+
+.login-modal-content {
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+}
+
+.login-modal-left {
+    flex: 0 0 50%;
+    background: linear-gradient(180deg, #7b2cbf 0%, #9d4edd 50%, #c77dff 100%);
+    padding: 4rem 3rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 600px;
+}
+
+.login-left-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-brand-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.1;
+}
+
+.login-brand-tagline {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+.login-welcome-section {
+    margin-top: 3rem;
+}
+
+.login-welcome-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.login-welcome-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 400;
+}
+
+.login-illustration-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+}
+
+.illustration-person {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.person-body {
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    background: #4caf50;
+    border-radius: 40px 40px 20px 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.person-umbrella {
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    background: linear-gradient(90deg, #2196f3 0%, #2196f3 25%, white 25%, white 50%, #2196f3 50%, #2196f3 75%, white 75%, white 100%);
+    border-radius: 50% 50% 0 0;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+.person-briefcase {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    background: #f44336;
+    border-radius: 4px;
+    right: 10%;
+    top: 60%;
+}
+
+.illustration-shield {
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    background: #2196f3;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    left: 10%;
+    bottom: 20%;
+}
+
+.illustration-coins {
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    background: #ffc107;
+    border-radius: 50%;
+    left: 25%;
+    bottom: 15%;
+    box-shadow: 0 0 0 3px #ff9800;
+}
+
+.illustration-document {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    background: white;
+    border: 2px solid #2196f3;
+    border-radius: 4px;
+    right: 15%;
+    top: 30%;
+}
+
+.illustration-plants {
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    background: #9c27b0;
+    border-radius: 20px 20px 0 0;
+    bottom: 10%;
+    left: 5%;
+}
+
+.login-modal-right {
+    flex: 0 0 50%;
+    padding: 3.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* Close Button */
+.login-close-btn {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #666;
+    z-index: 10;
+}
+
+.login-close-btn:hover {
+    background: #e8e8e8;
+    color: #333;
+    transform: scale(1.05);
+}
+
+.login-close-btn:active {
+    transform: scale(0.95);
+}
+
+.login-close-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.login-form-content {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.login-form-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.btn-proceed {
+    background: #007bff;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.875rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+}
+
+.btn-proceed:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.btn-proceed:active {
+    transform: translateY(0);
+}
+
+.login-app-links {
+    margin-top: auto;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.btn-app-store {
+    background: #1a1a1a;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.btn-app-store:hover {
+    background: #333;
+    transform: translateY(-1px);
+}
+
+/* Modal Responsive */
+@media (max-width: 991px) {
+    .login-modal-box {
+        max-width: 100%;
+        max-height: 95vh;
+        flex-direction: column;
+    }
+    
+    .login-modal-left {
+        flex: 0 0 35%;
+        padding: 2.5rem 2rem;
+        min-height: auto;
+    }
+    
+    .login-brand-title {
+        font-size: 2.5rem;
+    }
+    
+    .login-welcome-title {
+        font-size: 2rem;
+    }
+    
+    .login-modal-right {
+        flex: 0 0 65%;
+        padding: 2.5rem 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .login-modal-overlay {
+        padding: 0.5rem;
+    }
+    
+    .login-modal-box {
+        max-height: 98vh;
+        border-radius: 16px;
+    }
+    
+    .login-modal-left {
+        display: none;
+    }
+    
+    .login-modal-right {
+        flex: 1;
+        padding: 2.5rem 1.5rem;
+    }
+    
+    .login-form-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .login-form-content {
+        max-width: 100%;
+    }
+}
+
+/* ============================================
+   Login Form Styles (Legacy - Full Page)
+   ============================================ */
+
+.login-page {
+    min-height: 100vh;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+body.login-page-body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.login-left-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-left-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+    opacity: 0.3;
+}
+
+.login-left-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    width: 100%;
+    max-width: 500px;
+}
+
+.login-brand-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.login-brand-tagline {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+}
+
+.login-illustration {
+    margin-top: 4rem;
+}
+
+.illustration-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.illustration-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.login-right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: white;
+}
+
+.login-form-container {
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-form-wrapper {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.login-form-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.login-input {
+    width: 100%;
+    padding: 0.875rem 1rem 0.875rem 2.75rem;
+    font-size: 1rem;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.login-input:focus {
+    outline: none;
+    border-color: #007bff;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.input-icon {
+    color: #666;
+    font-size: 1.125rem;
+}
+
+.forgot-password-link {
+    font-size: 0.875rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.forgot-password-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.btn-login-submit {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.875rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.btn-login-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+    background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+}
+
+.btn-login-submit:active {
+    transform: translateY(0);
+}
+
+.login-divider {
+    text-align: center;
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.login-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+.login-divider span {
+    background: white;
+    padding: 0 1rem;
+    color: #666;
+    font-size: 0.875rem;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-social-login {
+    background: white;
+    border: 1.5px solid #e0e0e0;
+    color: #333;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    text-align: left;
+}
+
+.btn-social-login:hover {
+    border-color: #007bff;
+    background: #f8f9fa;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon {
+    font-size: 1.25rem;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #007bff;
+    border-radius: 50%;
+    color: white;
+}
+
+.signup-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.signup-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.login-footer {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ============================================
+   Registration Form Styles
+   ============================================ */
+
+.registration-page {
+    min-height: 100vh;
+    background: #f8f9fa;
+    padding: 3rem 0;
+}
+
+.registration-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.registration-form-wrapper {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.registration-form-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.registration-form-subtitle {
+    font-size: 0.95rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.registration-input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.registration-input:focus {
+    outline: none;
+    border-color: #007bff;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.btn-registration-submit {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.875rem 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+    width: 100%;
+}
+
+.btn-registration-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+    background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+}
+
+.btn-registration-submit:active {
+    transform: translateY(0);
+}
+
+/* ============================================
+   Form Validation Styles
+   ============================================ */
+
+.field-validation-error {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.validation-summary-errors {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    color: #721c24;
+    font-size: 0.875rem;
+}
+
+.validation-summary-errors ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.validation-summary-errors ul li {
+    margin-bottom: 0.25rem;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+@media (max-width: 991px) {
+    .login-left-section {
+        display: none;
+    }
+    
+    .login-right-section {
+        min-height: 100vh;
+    }
+    
+    .login-form-wrapper {
+        padding: 2rem;
+    }
+    
+    .login-form-title {
+        font-size: 1.5rem;
+    }
+    
+    .registration-form-wrapper {
+        padding: 2rem;
+    }
+    
+    .registration-form-title {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .login-right-section {
+        padding: 1rem;
+    }
+    
+    .login-form-wrapper {
+        padding: 1.5rem;
+        border-radius: 8px;
+    }
+    
+    .login-form-title {
+        font-size: 1.375rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .login-brand-title {
+        font-size: 2rem;
+    }
+    
+    .illustration-title {
+        font-size: 2rem;
+    }
+    
+    .registration-page {
+        padding: 2rem 0;
+    }
+    
+    .registration-form-wrapper {
+        padding: 1.5rem;
+    }
+    
+    .registration-form-title {
+        font-size: 1.5rem;
+    }
+}
+

@@ -1,0 +1,43 @@
+@* Auth feature area (placeholder) *@
+
+<FormCard>
+    <h2 class="h4 mb-3">Login</h2>
+    <EditForm OnValidSubmit="HandleLogin">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <InputText class="form-control" @bind-Value="Model.Email" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <InputText class="form-control" InputType="InputType.Password" @bind-Value="Model.Password" />
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Sign in</button>
+    </EditForm>
+</FormCard>
+
+@code {
+    private LoginModel Model { get; set; } = new();
+
+    private Task HandleLogin()
+    {
+        // TODO: wire up real auth later
+        return Task.CompletedTask;
+    }
+
+    private sealed class LoginModel
+    {
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; } = string.Empty;
+
+        [Required]
+        public string Password { get; set; } = string.Empty;
+    }
+}
+
+

@@ -1,0 +1,19 @@
+@* Generic card wrapper for page sections (placeholder) *@
+
+<section class="card mb-3">
+    <div class="card-body">
+        @if (!string.IsNullOrWhiteSpace(Title))
+        {
+            <h2 class="h5 mb-3">@Title</h2>
+        }
+
+        @ChildContent
+    </div>
+ </section>
+
+@code {
+    [Parameter] public string? Title { get; set; }
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+}
+
+

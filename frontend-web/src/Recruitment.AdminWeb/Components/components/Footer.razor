@@ -1,0 +1,108 @@
+@* Footer component matching the design *@
+
+<footer class="bg-white border-top mt-5">
+    <div class="container py-5">
+        <div class="row g-4">
+            @* Branding and Social Media (Left) *@
+            <div class="col-lg-3 col-md-6">
+                <div class="mb-3">
+                     <img src="/assets/shokai-logo.svg" alt="Shokai Logo" class="s-logo" />
+                    <p class="text-muted small mb-4">The Global Referral Platform</p>
+                </div>
+                <div>
+                    <h6 class= "w-600 mb-3">Connect with us</h6>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="rounded-circle bg-white border border-primary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                <span class="text-primary fw-bold">f</span>
+                            </div>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <div class="rounded-circle bg-white border border-primary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                <span class="text-primary fw-bold">X</span>
+                            </div>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <div class="rounded-circle bg-white border border-primary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                <span class="text-primary fw-bold">in</span>
+                            </div>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <div class="rounded-circle bg-white border border-primary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                <span class="text-primary fw-bold">ig</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            @* Navigation Links (Center) *@
+            <div class="col-lg-5 col-md-6">
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h6 class="w-600 mb-3">Company</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><NavLink href="/about/about-us" class="text-muted text-decoration-none">About us</NavLink></li>
+                            <li class="mb-2"><NavLink href="/about/contact-us" class="text-muted text-decoration-none">Contact us</NavLink></li>
+                            <li class="mb-2"><NavLink href="/job-roles/open-roles" class="text-muted text-decoration-none">Open roles</NavLink></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h6 class="w-600 mb-3">Hirers</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><NavLink href="/hirer/hirer-home" class="text-muted text-decoration-none">Hirer dashboard</NavLink></li>
+                            <li class="mb-2"><NavLink href="/hirer/hirer-registration" class="text-muted text-decoration-none">Register as Hirer</NavLink></li>
+                            <li class="mb-2"><NavLink href="/job-roles/create-job-role" class="text-muted text-decoration-none">Create job</NavLink></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="w-600 mb-3">Network</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><NavLink href="/referrer/referrer-home" class="text-muted text-decoration-none">Referrers</NavLink></li>
+                            <li class="mb-2"><NavLink href="/networker/networker-home" class="text-muted text-decoration-none">Networkers</NavLink></li>
+                            <li class="mb-2"><NavLink href="/about/why-referrals" class="text-muted text-decoration-none">Why referrals</NavLink></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            @* App Download Section (Right) *@
+            <div class="col-lg-4 col-md-12">
+                <div class="app-download-card">
+                    <h6 class="app-download-title">Apply on the go</h6>
+                    <p class="app-download-text">Get real-time job updates on our App</p>
+                    <div class="app-store-badges">
+                        <a href="#" class="app-badge-link">
+                            <img src="assets/android-app_sh.png" alt="Get it on Google Play" class="app-badge-img" />
+                        </a>
+                        <a href="#" class="app-badge-link">
+                            <img src="assets/ios-app_sh.png" alt="Download on the App Store" class="app-badge-img" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Copyright and Powered By (Bottom) *@
+    <div class="border-top py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted small mb-0">
+                        <strong>Shokai Technologies Pvt. Ltd.</strong><br>
+                        © @DateTime.Now.Year Shokai. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                    <span class="text-muted small me-2">Powered by</span>
+                    <span class="badge1">Referrals</span>
+                    <span class="badge1">Network</span>
+                    <span class="badge1">Insights</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+

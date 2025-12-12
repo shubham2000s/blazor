@@ -1,0 +1,14 @@
+@* Simple skill chips list (placeholder) *@
+
+<div class="d-flex flex-wrap gap-2">
+    @foreach (var skill in Skills)
+    {
+        <span class="badge rounded-pill text-bg-primary">@skill</span>
+    }
+</div>
+
+@code {
+    [Parameter] public IEnumerable<string> Skills { get; set; } = new List<string> { "C#", "Blazor", "SQL" };
+}
+
+

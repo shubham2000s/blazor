@@ -1,0 +1,101 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Recruitment.AdminWeb.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Recruitment.AdminWeb.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\CHANGELOG.md"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\COMMANDS.md",
+      "PackagePath": "staticwebassets\\COMMANDS.md"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\TESTS.md",
+      "PackagePath": "staticwebassets\\TESTS.md"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\about.css",
+      "PackagePath": "staticwebassets\\about.css"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\app.clean.css",
+      "PackagePath": "staticwebassets\\app.clean.css"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\app.min.css",
+      "PackagePath": "staticwebassets\\app.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\assets\\about-us-banner.webp",
+      "PackagePath": "staticwebassets\\assets\\about-us-banner.webp"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\assets\\android-app_sh.png",
+      "PackagePath": "staticwebassets\\assets\\android-app_sh.png"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\assets\\gogle-logo1.svg",
+      "PackagePath": "staticwebassets\\assets\\gogle-logo1.svg"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\assets\\google-logo.svg",
+      "PackagePath": "staticwebassets\\assets\\google-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\assets\\ios-app_sh.png",
+      "PackagePath": "staticwebassets\\assets\\ios-app_sh.png"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\assets\\shokai-favicon.png",
+      "PackagePath": "staticwebassets\\assets\\shokai-favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\assets\\shokai-logo.svg",
+      "PackagePath": "staticwebassets\\assets\\shokai-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\assets\\shokai-wh-logo.svg",
+      "PackagePath": "staticwebassets\\assets\\shokai-wh-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\forms.css",
+      "PackagePath": "staticwebassets\\forms.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Recruitment.AdminWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Recruitment.AdminWeb.props",
+      "PackagePath": "build\\Recruitment.AdminWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Recruitment.AdminWeb.props",
+      "PackagePath": "buildMultiTargeting\\Recruitment.AdminWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Recruitment.AdminWeb.props",
+      "PackagePath": "buildTransitive\\Recruitment.AdminWeb.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

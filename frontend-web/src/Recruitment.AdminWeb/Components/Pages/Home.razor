@@ -1,0 +1,442 @@
+﻿@page "/"
+@rendermode InteractiveServer
+
+<PageTitle>Shokai | Hire Smarter with Referrals & Strong Network Connections</PageTitle>
+
+@* Hero Section *@
+<section class="hero-section text-center pt-1">
+    <div class="container">
+        <h1 class="hero-heading mb-3">
+            Let's make <span class="hero-highlight">referral hiring</span> easy for you
+        </h1>
+       
+        <p class="hero-subtitle  mb-3">
+            The Global Referral Platform
+        </p>
+        <p class="hero-description  mx-auto">
+            Shokai connects Hirers, Referrers and Networkers on a single platform to unlock trusted opportunities.
+        </p>
+    </div>
+</section>
+
+
+
+@* Role Selection Section *@
+<section class="role-selection-section  py-md-2">
+    <div class="container">
+        <div class="role-card-wrapper">
+            <!-- <p class="role-prompt text-primary fw-semibold mb-4">I AM A...</p> -->
+
+            <div class="row g-3 g-md-4 mb-4">
+                <div class="col-12 col-md-4">
+                    <div class="role-card h-100">
+                        <div class="role-card-body">
+                            <h3 class="role-card-title mb-3">Hirer (Client)</h3>
+                            <p class="role-card-description  mb-4">
+                                Discover verified talent faster through trusted referrals and curated networks.
+                            </p>
+                            <NavLink href="/hirer/hirer-home" class="btn btn-primary w-100">
+                                Continue as Hirer
+                            </NavLink>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="role-card h-100">
+                        <div class="role-card-body">
+                            <h3 class="role-card-title mb-3">Referrer</h3>
+                            <p class="role-card-description mb-4">
+                                (Recruiter, Specialist, anyone who can give candidates) – unlock your network and earn.
+                            </p>
+                            <NavLink href="/referrer/referrer-home" class="btn btn-outline-primary w-100">
+                                Continue as Referrer
+                            </NavLink>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="role-card h-100">
+                        <div class="role-card-body">
+                            <h3 class="role-card-title mb-3">Networker</h3>
+                            <p class="role-card-description  mb-4">
+                                (Candidates looking to network) – grow your career through warm introductions.
+                            </p>
+                            <NavLink href="/networker/networker-home" class="btn btn-outline-primary w-100">
+                                Continue as Networker
+                            </NavLink>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <p class="text-muted text-center mb-4 small">
+                Maybe this can be a dropdown as well...
+            </p> -->
+
+            <div class="role-dropdown-section">
+                <div class="row g-2 align-items-center justify-content-center">
+                    <div class="col-auto">
+                        <span class="fw-semibold">I am a</span>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <select class="form-select" @bind="selectedRole">
+                            <option value="">Choose your role</option>
+                            <option value="hirer">Hirer</option>
+                            <option value="referrer">Referrer</option>
+                            <option value="networker">Networker</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <button class="btn btn-primary w-100" @onclick="HandleGetStarted">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* Key Features Section *@
+<section class="key-features-section">
+    <div class="container">
+        <h2 class="key-features-title h-34 w-600 t-center">Key Features That Power Shokai</h2>
+        
+        <div class="key-features-grid">
+            @* Feature 1 - Smart Matching *@
+            <div class="key-feature-item">
+                <div class="key-feature-icon key-feature-icon-peach">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                        <path d="M11 8v6M8 11h6"/>
+                    </svg>
+                </div>
+                <h3 class="key-feature-title h-20 w-600">Smart Matching</h3>
+                <p class="key-feature-desc h-16 w-400">
+                    Industry + sub-industry intelligent matching for accurate referrals.
+                </p>
+            </div>
+
+            @* Feature 2 - Auto Referral Routing *@
+            <div class="key-feature-item">
+                <div class="key-feature-icon key-feature-icon-blush">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                    </svg>
+                </div>
+                <h3 class="key-feature-title h-20 w-600">Auto Referral Routing</h3>
+                <p class="key-feature-desc h-16 w-400">
+                    Automated routing using Shokai's logic to deliver the right jobs.
+                </p>
+            </div>
+
+            @* Feature 3 - Email Availability Confirmation *@
+            <div class="key-feature-item">
+                <div class="key-feature-icon key-feature-icon-peach">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                </div>
+                <h3 class="key-feature-title h-20 w-600">Email Availability Confirmation</h3>
+                <p class="key-feature-desc h-16 w-400">
+                    Instantly checks if the candidate is reachable and active.
+                </p>
+            </div>
+
+            @* Feature 4 - Candidate Tracking *@
+            <div class="key-feature-item">
+                <div class="key-feature-icon key-feature-icon-blush">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                </div>
+                <h3 class="key-feature-title h-20 w-600">Candidate Tracking</h3>
+                <p class="key-feature-desc h-16 w-400">
+                    Track referrals and hiring progress in real-time.
+                </p>
+            </div>
+
+            @* Feature 5 - Transparent Bonus Payouts *@
+            <div class="key-feature-item">
+                <div class="key-feature-icon key-feature-icon-peach">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/>
+                        <path d="M12 18V6"/>
+                    </svg>
+                </div>
+                <h3 class="key-feature-title h-20 w-600">Transparent Bonus Payouts</h3>
+                <p class="key-feature-desc h-16 w-400">
+                    Clear visibility of referral bonuses and payment status.
+                </p>
+            </div>
+
+            @* Feature 6 - Role-Based Dashboards *@
+            <div class="key-feature-item">
+                <div class="key-feature-icon key-feature-icon-blush">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7" rx="1"/>
+                        <rect x="14" y="3" width="7" height="7" rx="1"/>
+                        <rect x="3" y="14" width="7" height="7" rx="1"/>
+                        <rect x="14" y="14" width="7" height="7" rx="1"/>
+                    </svg>
+                </div>
+                <h3 class="key-feature-title h-20 w-600">Role-Based Dashboards</h3>
+                <p class="key-feature-desc h-16 w-400">
+                    Dedicated views for Hirers, Referrers, and Networkers.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* How Shokai Works Section *@
+<section class="how-it-works-section">
+    <div class="container">
+        <h2 class="how-it-works-title">How Shokai Works</h2>
+        <div class="fintech-cards-grid">
+            @* Card 1 - Hirer (Green) *@
+            <div class="fintech-card fintech-card-green">
+                <div class="fintech-card-content">
+                    <span class="fintech-card-label">HIRER</span>
+                    <h3 class="fintech-card-title">Smart Hiring</h3>
+                    <p class="fintech-card-description">
+                        Post job requirement, get curated referrers, and review candidates fast.
+                    </p>
+                </div>
+                <div class="fintech-card-footer">
+                    <div class="fintech-card-metric">
+                        <span class="metric-label">Result</span>
+                        <span class="metric-value">Fast Hiring</span>
+                    </div>
+                    <NavLink href="/hirer/hirer-home" class="fintech-card-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </NavLink>
+                </div>
+            </div>
+
+            @* Card 2 - Referrer (Dark) *@
+            <div class="fintech-card fintech-card-dark">
+                <div class="fintech-card-content">
+                    <span class="fintech-card-label">REFERRER</span>
+                    <h3 class="fintech-card-title">Share & Earn</h3>
+                    <p class="fintech-card-description">
+                        Invite networkers, share job requirements, and earn bonuses.
+                    </p>
+                </div>
+                <div class="fintech-card-footer">
+                    <div class="fintech-card-metric">
+                        <span class="metric-label">Benefit</span>
+                        <span class="metric-value">Earn Bonuses</span>
+                    </div>
+                    <NavLink href="/referrer/referrer-home" class="fintech-card-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </NavLink>
+                </div>
+            </div>
+
+            @* Card 3 - Networker (Purple) *@
+            <div class="fintech-card fintech-card-purple">
+                <div class="fintech-card-content">
+                    <span class="fintech-card-label">NETWORKER</span>
+                    <h3 class="fintech-card-title">Opportunities</h3>
+                    <p class="fintech-card-description">
+                        Get job invites from your network and earn rewards.
+                    </p>
+                </div>
+                <div class="fintech-card-footer">
+                    <div class="fintech-card-metric">
+                        <span class="metric-label">Benefit</span>
+                        <span class="metric-value">Earn Rewards</span>
+                    </div>
+                    <NavLink href="/networker/networker-home" class="fintech-card-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </NavLink>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+@* Why Choose Us Section *@
+<section class="why-choose-section">
+    <div class="container">
+        <h2 class="why-choose-title h-34 w-600">Why Choose Us</h2>
+        
+        <div class="why-choose-grid">
+            @* Left Side - 2x2 Cards *@
+            <div class="why-choose-left">
+                @* Card 1 - Faster Hiring *@
+                <div class="why-choose-card">
+                    <div class="why-choose-icon why-choose-icon-mint">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-choose-card-title h-20 w-600">Faster Hiring Cycle</h3>
+                    <p class="why-choose-card-desc h-16 w-400">
+                        Speed up the hiring process with optimized referral workflows.
+                    </p>
+                </div>
+
+                @* Card 2 - High Quality *@
+                <div class="why-choose-card">
+                    <div class="why-choose-icon why-choose-icon-peach">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-choose-card-title h-20 w-600">High-Quality Referrals</h3>
+                    <p class="why-choose-card-desc h-16 w-400">
+                        Get curated, trustworthy candidates from verified networks.
+                    </p>
+                </div>
+
+                @* Card 3 - Network Reach *@
+                <div class="why-choose-card">
+                    <div class="why-choose-icon why-choose-icon-lavender">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-choose-card-title h-20 w-600">Large Network Reach</h3>
+                    <p class="why-choose-card-desc h-16 w-400">
+                        Expand sourcing power with wide community-driven distribution.
+                    </p>
+                </div>
+
+                @* Card 4 - Bonus Motivation *@
+                <div class="why-choose-card">
+                    <div class="why-choose-icon why-choose-icon-sky">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="6" width="20" height="12" rx="2"/>
+                            <circle cx="12" cy="12" r="2"/>
+                            <path d="M6 12h.01M18 12h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-choose-card-title h-20 w-600">Bonus-Based Motivation</h3>
+                    <p class="why-choose-card-desc h-16 w-400">
+                        Motivate participation with transparent and rewarding bonus payouts.
+                    </p>
+                </div>
+            </div>
+
+            @* Right Side - Highlight Card *@
+            <div class="why-choose-right">
+                <div class="why-choose-highlight-card">
+                    <div class="highlight-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="highlight-title h-24 w-700">A Smarter Referral Ecosystem</h3>
+                    <p class="highlight-desc h-16 w-400">
+                        Shokai simplifies hiring for Hirers, Referrers, and Networkers with a fast, trusted, transparent flow.
+                    </p>
+                    <p class="highlight-subdesc h-14 w-400">
+                        Whether you're a working professional or a recruiter, you can customize your workflow to fit your needs.
+                    </p>
+                    <NavLink href="/hirer/hirer-home" class="highlight-cta">
+                        Start Free Trial
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </NavLink>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* FAQ Section *@
+<section class="faq-section">
+    <div class="container">
+        <div class="faq-header t-center">
+            <span class="faq-pill">Frequently Asked</span>
+            <h2 class="faq-title h-34 w-600">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+            @foreach (var faq in faqItems)
+            {
+                var isOpen = expandedFaq == faq.Id;
+                <div class="faq-item @(isOpen ? "faq-item-active" : "")">
+                    <button type="button" 
+                            class="faq-question" 
+                            aria-expanded="@isOpen.ToString().ToLower()"
+                            @onclick="() => ToggleFaq(faq.Id)">
+                        <span class="faq-question-text h-18 w-500">@faq.Question</span>
+                        <span class="faq-icon @(isOpen ? "faq-icon-active" : "")">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="8" y1="12" x2="16" y2="12"/>
+                                <line x1="12" y1="8" x2="12" y2="16" class="faq-plus-line"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer @(isOpen ? "faq-answer-open" : "")" aria-hidden="@(!isOpen).ToString().ToLower()">
+                        <p class="h-16 w-400">@faq.Answer</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+@code {
+    private string selectedRole = string.Empty;
+    private int? expandedFaq = 1; // First FAQ open by default
+
+    private List<FaqItem> faqItems = new()
+    {
+        new FaqItem(1, "Who is a Referrer?", "A referrer is someone who shares job opportunities with their network and helps companies connect with the right candidates."),
+        new FaqItem(2, "How bonus is paid?", "Bonuses are paid transparently once a referred candidate completes the required hiring milestones. Users can track payout status in real time."),
+        new FaqItem(3, "Is the platform free?", "Yes, Shokai is free to join for Hirers, Referrers, and Networkers. No hidden charges.")
+    };
+
+    private void ToggleFaq(int faqId)
+    {
+        expandedFaq = expandedFaq == faqId ? null : faqId;
+    }
+
+    private record FaqItem(int Id, string Question, string Answer);
+
+    private void HandleGetStarted()
+    {
+        if (string.IsNullOrEmpty(selectedRole))
+            return;
+
+        var route = selectedRole switch
+        {
+            "hirer" => "/hirer/hirer-home",
+            "referrer" => "/referrer/referrer-home",
+            "networker" => "/networker/networker-home",
+            _ => "/"
+        };
+
+        NavigationManager.NavigateTo(route);
+    }
+
+    [Inject] private NavigationManager NavigationManager { get; set; } = default!;
+}
