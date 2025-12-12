@@ -88,3 +88,4 @@ C:\Users\Shubham.kumawat\Desktop\smart-recruitment\frontend-web\src\Recruitment.
 C:\Users\Shubham.kumawat\Desktop\smart-recruitment\frontend-web\src\Recruitment.AdminWeb\obj\Debug\net8.0\Recruitment.AdminWeb.pdb
 C:\Users\Shubham.kumawat\Desktop\smart-recruitment\frontend-web\src\Recruitment.AdminWeb\obj\Debug\net8.0\Recruitment.AdminWeb.genruntimeconfig.cache
 C:\Users\Shubham.kumawat\Desktop\smart-recruitment\frontend-web\src\Recruitment.AdminWeb\obj\Debug\net8.0\ref\Recruitment.AdminWeb.dll
+C:\Users\Shubham.kumawat\Desktop\smart-recruitment\frontend-web\src\Recruitment.AdminWeb\obj\Debug\net8.0\Recruitment.AdminWeb.sourcelink.json
