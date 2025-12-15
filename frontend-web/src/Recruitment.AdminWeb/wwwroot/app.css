@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: clamp(3rem, 1.8571rem + 2.381vw, 4rem); }
-h2 { font-size: clamp(1.75rem, 1.3214rem + 0.8929vw, 2.125rem); }
+h2 { font-size: clamp(1.5rem, 1.125rem + 0.7813vw, 1.75rem); }
 h3 { font-size: clamp(1.25rem, 0.9643rem + 0.5952vw, 1.5rem); font-weight: 600 !important; }
 h4 { font-size: 20px; }
 h5 { font-size: 18px; }
@@ -116,6 +116,7 @@ h1:focus { outline: none; }
     padding: 0.625rem 1.5rem;
     border-radius: 8px;
     transition: all 0.3s ease;
+    font-size: 14px;
 }
 
 .btn:focus,
@@ -215,7 +216,7 @@ h1:focus { outline: none; }
 .custom-navbar .navbar-nav { gap: 0.5rem; }
 
 .custom-navbar .nav-link {
-    font-size: 0.95rem;
+    font-size: 14px;
     font-weight: 500;
     color: #1a1a1a !important;
     padding: 0.5rem 0.75rem;
@@ -231,7 +232,7 @@ h1:focus { outline: none; }
 
 .navbar-actions .btn {
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 500;
     padding: 0.5rem 1.25rem;
     border-radius: 6px;
     transition: all 0.2s ease;
@@ -319,6 +320,9 @@ h1:focus { outline: none; }
     display: flex;
     flex-direction: column;
     height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .role-card-title {
@@ -396,7 +400,7 @@ h1:focus { outline: none; }
 }
 
 .fintech-card-title {
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 0.75rem;
     line-height: 1.2;
@@ -522,8 +526,12 @@ h1:focus { outline: none; }
 }
 
 .key-feature-item {
-    text-align: left;
+    text-align: center;
     padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .key-feature-icon {
@@ -937,7 +945,7 @@ h1:focus { outline: none; }
 
 .app-download-title {
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 600;
     color: #1a1a1a;
     margin-bottom: 0.5rem;
 }
@@ -995,7 +1003,7 @@ h1:focus { outline: none; }
 
 /* ----- min-width: 992px ----- */
 @media (min-width: 992px) {
-    .custom-navbar .navbar-nav { gap: 1rem; }
+    .custom-navbar .navbar-nav { gap: 10px; }
     .hero-heading { font-size: 2rem; }
 }
 
@@ -1042,6 +1050,7 @@ h1:focus { outline: none; }
     
     .why-choose-left { grid-template-columns: repeat(2, 1fr); }
     .why-choose-highlight-card { padding: 2rem; }
+    .gap-70{ gap: 30px !important}
 }
 
 /* ----- max-width: 768px ----- */
@@ -1176,6 +1185,7 @@ h1:focus { outline: none; }
     }
     
     .section-title { font-size: 1.75rem; }
+    
 }
 
 /* ----- max-width: 576px ----- */
@@ -1186,4 +1196,27 @@ h1:focus { outline: none; }
     }
     
     .app-badge-img { height: 40px; }
+    .key-inner-div { flex-direction: column !important; }
+    
+}
+
+
+.key-inner-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+.gap-70{
+    gap: 70px;
+}
+
+.dis-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.dis-col{
+    display: flex;
+    flex-direction: column;
 }
