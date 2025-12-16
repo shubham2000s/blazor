@@ -1,36 +1,36 @@
 @* Footer component matching the design *@
 
-<footer class="bg-white border-top mt-5">
+<footer class="bg-white border-top">
     <div class="container py-5">
         <div class="row g-4">
             @* Branding and Social Media (Left) *@
             <div class="col-lg-3 col-md-6">
                 <div class="mb-3">
                      <img src="/assets/shokai-logo.svg" alt="Shokai Logo" class="s-logo" />
-                    <p class="text-muted small mb-2">The Global Referral Platform</p>
+                    <p class="navbar-tagline text-muted mb-2">The Global Referral Platform</p>
                     <p class="h-14 mb-4"> Shokai is a referral-based hiring platform that connects companies with trusted referrers to source high-quality candidates faster using AI-driven shortlisting and transparent reward mechanisms.</p>
                 </div>
                 <div>
                     <h6 class= "w-600 mb-3">Connect with us</h6>
                     <div class="d-flex gap-2">
                         <a href="#" class="text-decoration-none">
-                            <div class="rounded-circle bg-white border border-primary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
-                                <span class="text-primary fw-bold">f</span>
+                            <div class="s-icon">
+                                <span>f</span>
                             </div>
                         </a>
                         <a href="#" class="text-decoration-none">
-                            <div class="rounded-circle bg-white border border-primary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
-                                <span class="text-primary fw-bold">X</span>
+                            <div class="s-icon">
+                                <span>x</span>
                             </div>
                         </a>
                         <a href="#" class="text-decoration-none">
-                            <div class="rounded-circle bg-white border border-primary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
-                                <span class="text-primary fw-bold">in</span>
+                            <div class="s-icon">
+                                <span>in</span>
                             </div>
                         </a>
                         <a href="#" class="text-decoration-none">
-                            <div class="rounded-circle bg-white border border-primary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
-                                <span class="text-primary fw-bold">ig</span>
+                            <div class="s-icon">
+                                <span>ig</span>
                             </div>
                         </a>
                     </div>
@@ -43,25 +43,25 @@
                     <div class="col-md-4 mb-3 mb-md-0">
                         <h6 class="w-600 mb-3">Company</h6>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><NavLink href="/about/about-us" class="text-muted text-decoration-none">About us</NavLink></li>
-                            <li class="mb-2"><NavLink href="/about/contact-us" class="text-muted text-decoration-none">Contact us</NavLink></li>
-                            <li class="mb-2"><NavLink href="/job-roles/open-roles" class="text-muted text-decoration-none">Open roles</NavLink></li>
+                            <li class="mb-2"><NavLink href="/about/about-us" class="ft-txt text-decoration-none">About us</NavLink></li>
+                            <li class="mb-2"><NavLink href="/about/contact-us" class="ft-txt text-decoration-none">Contact us</NavLink></li>
+                            <li class="mb-2"><NavLink href="/job-roles/open-roles" class="ft-txt text-decoration-none">Open roles</NavLink></li>
                         </ul>
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
                         <h6 class="w-600 mb-3">Hirers</h6>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><NavLink href="/hirer/hirer-home" class="text-muted text-decoration-none">Hirer dashboard</NavLink></li>
-                            <li class="mb-2"><NavLink href="/hirer/hirer-registration" class="text-muted text-decoration-none">Register as Hirer</NavLink></li>
-                            <li class="mb-2"><NavLink href="/job-roles/create-job-role" class="text-muted text-decoration-none">Create job</NavLink></li>
+                            <li class="mb-2"><NavLink href="/hirer/hirer-home" class="ft-txt text-decoration-none">Hirer dashboard</NavLink></li>
+                            <li class="mb-2"><NavLink href="/hirer/hirer-registration" class="ft-txt text-decoration-none">Register as Hirer</NavLink></li>
+                            <li class="mb-2"><NavLink href="/job-roles/create-job-role" class="ft-txt text-decoration-none">Create job</NavLink></li>
                         </ul>
                     </div>
                     <div class="col-md-4">
                         <h6 class="w-600 mb-3">Network</h6>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><NavLink href="/referrer/referrer-home" class="text-muted text-decoration-none">Referrers</NavLink></li>
-                            <li class="mb-2"><NavLink href="/networker/networker-home" class="text-muted text-decoration-none">Networkers</NavLink></li>
-                            <li class="mb-2"><NavLink href="/about/why-referrals" class="text-muted text-decoration-none">Why referrals</NavLink></li>
+                            <li class="mb-2"><NavLink href="/referrer/referrer-home" class="ft-txt text-decoration-none">Referrers</NavLink></li>
+                            <li class="mb-2"><NavLink href="/networker/networker-home" class="ft-txt text-decoration-none">Networkers</NavLink></li>
+                            <li class="mb-2"><NavLink href="/about/why-referrals" class="ft-txt text-decoration-none">Why referrals</NavLink></li>
                         </ul>
                     </div>
                 </div>
@@ -90,13 +90,13 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="text-muted small mb-0">
+                    <p class="ft-txt small mb-0">
                         <strong>Shokai Technologies Pvt. Ltd.</strong><br>
                         © @DateTime.Now.Year Shokai. All rights reserved.
                     </p>
                 </div>
                 <div class="col-md-6 text-md-end mt-2 mt-md-0">
-                    <span class="text-muted small me-2">Powered by</span>
+                    <span class="ft-txt small me-2">Powered by</span>
                     <span class="badge1">Referrals</span>
                     <span class="badge1">Network</span>
                     <span class="badge1">Insights</span>

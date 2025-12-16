@@ -182,7 +182,7 @@ h1:focus { outline: none; }
    5. NAVBAR STYLES
    ============================================== */
 
-.custom-navbar { padding: 0.75rem 0; }
+.custom-navbar { padding: 0.75rem 0; box-shadow: rgba(149, 157, 165, 0.08) 0px 4px 20px;}
 
 .navbar-brand {
     display: flex;
@@ -245,6 +245,135 @@ h1:focus { outline: none; }
 }
 
 .navbar-actions a.btn:hover { text-decoration: none; }
+
+/* Mobile Navbar Toggle Animation */
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+    background: transparent;
+    position: relative;
+    z-index: 1001;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2826, 26, 26, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Desktop Navbar - Show full menu */
+@media (min-width: 992px) {
+    .custom-navbar .navbar-toggler {
+        display: none !important;
+    }
+
+    .custom-navbar .navbar-collapse,
+    .custom-navbar .navbar-collapse.collapse,
+    .custom-navbar .navbar-collapse.show {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        position: static;
+        width: auto;
+        height: auto;
+        background: transparent;
+        padding: 0;
+        box-shadow: none;
+        right: auto;
+    }
+
+    .custom-navbar .navbar-nav {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .navbar-actions {
+        margin-left: 1rem;
+    }
+
+    .navbar-backdrop {
+        display: none !important;
+    }
+}
+
+/* Mobile Menu Collapse */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: #ffffff;
+        padding: 80px 1.5rem 2rem;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+        overflow-y: auto;
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+    }
+
+    .navbar-collapse.collapse:not(.show) {
+        display: flex !important;
+    }
+
+    .custom-navbar .navbar-nav {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+
+    .custom-navbar .navbar-nav .nav-item {
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .custom-navbar .navbar-nav .nav-link {
+        padding: 1rem 0;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .navbar-actions {
+        margin-left: 0;
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #e0e0e0;
+        width: 100%;
+    }
+
+    .navbar-actions .btn {
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem 1.5rem;
+    }
+
+    /* Mobile menu backdrop */
+    .navbar-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+}
 
 /* ==============================================
    6. HERO SECTION
@@ -745,7 +874,6 @@ h1:focus { outline: none; }
 }
 
 .faq-list {
-    max-width: 720px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -934,11 +1062,11 @@ h1:focus { outline: none; }
 }
 
 .badge1 {
-    background-color: #0d73fd50;
+    background-color: #2563eb21;
     font-size: 12px;
     padding: 5px 10px;
     border-radius: 5px;
-    color: #010101;
+    color: #2563eb;
     font-weight: 500;
     letter-spacing: 0.5px;
 }
@@ -988,6 +1116,7 @@ h1:focus { outline: none; }
         margin-left: 0.5rem;
         margin-top: 0;
     }
+
     
     .hero-section { padding: 40px 0; }
     .hero-heading { font-size: 2rem; }
@@ -999,6 +1128,7 @@ h1:focus { outline: none; }
     
     .why-shokai-section { padding: 5rem 0; }
     .section-title { font-size: 2.5rem; }
+    .p-sticky{position: relative; top: 0;}
 }
 
 /* ----- min-width: 992px ----- */
@@ -1056,6 +1186,11 @@ h1:focus { outline: none; }
 /* ----- max-width: 768px ----- */
 @media (max-width: 768px) {
     .how-it-works-section { padding: 3rem 0; }
+    .mb-col{flex-direction: column !important;}
+    .mb-col-reverse{flex-direction: column-reverse !important;}
+    .p-sticky{position: relative !important; top: 0 !important;}
+    .cta-section{padding-left: 20px !important; padding-right: 20px !important;}
+
     
     .how-it-works-title {
         font-size: 1.75rem;
@@ -1189,11 +1324,8 @@ h1:focus { outline: none; }
 }
 
 /* ----- max-width: 576px ----- */
+
 @media (max-width: 576px) {
-    .app-store-badges {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
     
     .app-badge-img { height: 40px; }
     .key-inner-div { flex-direction: column !important; }
@@ -1219,4 +1351,83 @@ h1:focus { outline: none; }
 .dis-col{
     display: flex;
     flex-direction: column;
+}
+
+.ft-txt{
+    color: #1C1209;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0rem !important;
+}
+
+.s-icon{
+    width: 36px; 
+    height: 36px;
+    border-radius: 10px;
+    background-color: #2563eb21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 0rem !important;
+    border: 1px solid #2563eb;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color: #2563eb;
+        color: #ffffff !important;
+    }
+}
+
+.cta-section{
+    background: #F8F9FA;
+    padding-bottom: 60px; 
+}
+
+.cta-section-inner{
+    background: linear-gradient(180deg, rgba(239, 237, 255, 0) 0%, var(--A200, #EFEDFF) 100%);
+    border-radius: 20px;
+    border: 1px solid var(--A200, #EFEDFF);
+}
+
+.l-pd{
+    padding: 46px 30px;
+}
+
+/* CTA Banner Image */
+.cta-banner-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.cta-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media (max-width: 991.98px) {
+    .cta-banner-img {
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+    
+}
+
+.a-item-start{
+    align-items: flex-start;
+}
+
+.p-sticky{
+    position: sticky;
+    top: 20px
 }

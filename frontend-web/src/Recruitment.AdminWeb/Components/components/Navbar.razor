@@ -1,48 +1,73 @@
 @* Top navigation bar matching the design exactly *@
+@rendermode InteractiveServer
 
 <nav class="custom-navbar navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
         @* Logo and Tagline (Left) *@
         <a class="navbar-brand d-flex flex-column flex-md-row align-items-start align-items-md-center" href="/">
             <div class="d-flex align-items-center">
-                <!-- <span class="navbar-logo-arrow text-primary">←</span> -->
                 <img src="/assets/shokai-logo.svg" alt="Shokai Logo" class="s-logo" />
             </div>
             <span class="navbar-tagline text-muted">Good Referrals - Good Careers</span>
         </a>
 
-        @* Navigation Links (Center) *@
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        @* Mobile Toggle Button *@
+        <button class="navbar-toggler @(isMenuOpen ? "" : "collapsed")" 
+                type="button" 
+                @onclick="ToggleMenu"
+                aria-controls="navbarNav" 
+                aria-expanded="@isMenuOpen.ToString().ToLower()" 
+                aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav ">
+
+        @* Navigation Links *@
+        <div class="navbar-collapse @(isMenuOpen ? "show" : "collapse")" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <NavLink href="/about/about-us" class="nav-link">About Us</NavLink>
+                    <NavLink href="/about/about-us" class="nav-link" @onclick="CloseMenu">About Us</NavLink>
                 </li>
                 <li class="nav-item">
-                    <NavLink href="/about/why-referrals" class="nav-link">Why Referrals</NavLink>
+                    <NavLink href="/about/why-referrals" class="nav-link" @onclick="CloseMenu">Why Referrals</NavLink>
                 </li>
                 <li class="nav-item">
-                    <NavLink href="/about/our-vision" class="nav-link">Our Vision</NavLink>
+                    <NavLink href="/about/our-vision" class="nav-link" @onclick="CloseMenu">Our Vision</NavLink>
                 </li>
                 <li class="nav-item">
-                    <NavLink href="/about/our-values" class="nav-link">Our Values</NavLink>
+                    <NavLink href="/about/our-values" class="nav-link" @onclick="CloseMenu">Our Values</NavLink>
                 </li>
                 <li class="nav-item">
-                    <NavLink href="/about/our-leadership" class="nav-link">Our Leadership</NavLink>
+                    <NavLink href="/about/our-leadership" class="nav-link" @onclick="CloseMenu">Our Leadership</NavLink>
                 </li>
                 <li class="nav-item">
-                    <NavLink href="/about/contact-us" class="nav-link">Contact Us</NavLink>
+                    <NavLink href="/about/contact-us" class="nav-link" @onclick="CloseMenu">Contact Us</NavLink>
                 </li>
             </ul>
 
             @* Action Buttons (Right) *@
             <div class="navbar-actions d-flex gap-2">
-                <NavLink href="/login" class="btn btn-get-started">Login</NavLink>
+                <NavLink href="/login" class="btn btn-get-started" @onclick="CloseMenu">Login</NavLink>
             </div>
         </div>
     </div>
 </nav>
 
+@* Mobile overlay backdrop *@
+@if (isMenuOpen)
+{
+    <div class="navbar-backdrop" @onclick="CloseMenu"></div>
+}
 
+@code {
+    private bool isMenuOpen = false;
+
+    private void ToggleMenu()
+    {
+        isMenuOpen = !isMenuOpen;
+    }
+
+    private void CloseMenu()
+    {
+        isMenuOpen = false;
+    }
+}
