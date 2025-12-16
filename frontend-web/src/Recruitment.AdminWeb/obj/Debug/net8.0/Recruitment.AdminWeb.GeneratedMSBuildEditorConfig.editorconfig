@@ -9,163 +9,195 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Recruitment.AdminWeb
 build_property.RootNamespace = Recruitment.AdminWeb
-build_property.ProjectDir = C:\Users\Shubham.kumawat\Desktop\smart-recruitment\frontend-web\src\Recruitment.AdminWeb\
+build_property.ProjectDir = C:\Users\Shubham.kumawat\Desktop\Shokai\blazor\frontend-web\src\Recruitment.AdminWeb\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Shubham.kumawat\Desktop\smart-recruitment\frontend-web\src\Recruitment.AdminWeb
+build_property.MSBuildProjectDirectory = C:\Users\Shubham.kumawat\Desktop\Shokai\blazor\frontend-web\src\Recruitment.AdminWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/App.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/components/DataTable.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/components/AppDownloadCta.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xjb21wb25lbnRzXEFwcERvd25sb2FkQ3RhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/components/DataTable.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xjb21wb25lbnRzXERhdGFUYWJsZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/components/Footer.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/components/Footer.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xjb21wb25lbnRzXEZvb3Rlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/components/FormCard.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/components/FormCard.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xjb21wb25lbnRzXEZvcm1DYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/components/Navbar.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/components/Navbar.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xjb21wb25lbnRzXE5hdmJhci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/components/PageCard.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/components/PageCard.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xjb21wb25lbnRzXFBhZ2VDYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/components/Sidebar.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/components/Sidebar.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xjb21wb25lbnRzXFNpZGViYXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/components/SkillChips.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/components/SkillChips.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xjb21wb25lbnRzXFNraWxsQ2hpcHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/features/auth/LoginPanel.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/features/auth/LoginPanel.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xmZWF0dXJlc1xhdXRoXExvZ2luUGFuZWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Layout/LoginLayout.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Layout/LoginLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTG9naW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/About/AboutUs.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/About/AboutUs.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBYm91dFxBYm91dFVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/About/ContactUs.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/About/ContactUs.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBYm91dFxDb250YWN0VXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/About/OurLeadership.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/About/OurLeadership.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBYm91dFxPdXJMZWFkZXJzaGlwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/About/OurValues.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/About/OurValues.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBYm91dFxPdXJWYWx1ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/About/OurVision.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/About/OurVision.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBYm91dFxPdXJWaXNpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/About/WhyReferrals.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/About/WhyReferrals.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBYm91dFxXaHlSZWZlcnJhbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Counter.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Contact/ContactUs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250YWN0XENvbnRhY3RVcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Error.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Hirer/HirerHome.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Hirer/HirerHome.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIaXJlclxIaXJlckhvbWUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Hirer/HirerRegistration.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Hirer/HirerRegistration.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIaXJlclxIaXJlclJlZ2lzdHJhdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Home.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/JobRoles/CreateJobRole.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Home/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lXEhvbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/JobRoles/CreateJobRole.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xKb2JSb2xlc1xDcmVhdGVKb2JSb2xlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/JobRoles/OpenRoles.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/JobRoles/OpenRoles.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xKb2JSb2xlc1xPcGVuUm9sZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/JobRoles/ReferralMatch.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/JobRoles/ReferralMatch.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xKb2JSb2xlc1xSZWZlcnJhbE1hdGNoLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Landing.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Landing.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMYW5kaW5nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Login.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Leadership/OurLeadership.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMZWFkZXJzaGlwXE91ckxlYWRlcnNoaXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Masters/MasterPage.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/LoginPage/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpblBhZ2VcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Masters/MasterPage.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYXN0ZXJzXE1hc3RlclBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Masters/MastersLayout.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Masters/MastersLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYXN0ZXJzXE1hc3RlcnNMYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Networker/NetworkerHome.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Networker/NetworkerHome.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOZXR3b3JrZXJcTmV0d29ya2VySG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Networker/NetworkerRegistration.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Networker/NetworkerRegistration.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOZXR3b3JrZXJcTmV0d29ya2VyUmVnaXN0cmF0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Referrer/ReferrerHome.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/OurValues/OurValues.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPdXJWYWx1ZXNcT3VyVmFsdWVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/OurvisionPage/OurVision.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPdXJ2aXNpb25QYWdlXE91clZpc2lvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Referrer/ReferrerHome.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZWZlcnJlclxSZWZlcnJlckhvbWUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Referrer/ReferrerRegistration.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Referrer/ReferrerRegistration.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZWZlcnJlclxSZWZlcnJlclJlZ2lzdHJhdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Unauthorized/Unauthorized.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Unauthorized/Unauthorized.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVbmF1dGhvcml6ZWRcVW5hdXRob3JpemVkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Weather.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Routes.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Pages/WhyReferralPage/WhyReferrals.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXaHlSZWZlcnJhbFBhZ2VcV2h5UmVmZXJyYWxzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/_Imports.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Layout/MainLayout.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-xorf78s29t
 
-[C:/Users/Shubham.kumawat/Desktop/smart-recruitment/frontend-web/src/Recruitment.AdminWeb/Components/Layout/NavMenu.razor]
+[C:/Users/Shubham.kumawat/Desktop/Shokai/blazor/frontend-web/src/Recruitment.AdminWeb/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-ltecdubhjz
