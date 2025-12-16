@@ -41,6 +41,18 @@
       "PackagePath": "staticwebassets\\assets\\android-app_sh.png"
     },
     {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\assets\\cta-banners-1.png",
+      "PackagePath": "staticwebassets\\assets\\cta-banners-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\assets\\cta-banners.png",
+      "PackagePath": "staticwebassets\\assets\\cta-banners.png"
+    },
+    {
+      "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\assets\\faq-img.png",
+      "PackagePath": "staticwebassets\\assets\\faq-img.png"
+    },
+    {
       "Id": "C:\\Users\\Shubham.kumawat\\Desktop\\smart-recruitment\\frontend-web\\src\\Recruitment.AdminWeb\\wwwroot\\assets\\gogle-logo1.svg",
       "PackagePath": "staticwebassets\\assets\\gogle-logo1.svg"
     },
