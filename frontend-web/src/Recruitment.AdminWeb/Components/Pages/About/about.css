@@ -1,0 +1,375 @@
+/* ============================================
+   About Pages Styles
+   All styles for About folder pages
+   ============================================ */
+
+/* ============================================
+   Common Styles
+   ============================================ */
+
+.section-main-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+/* ============================================
+   Company Profile Section (About Us Page)
+   ============================================ */
+
+.company-profile-section {
+    padding: 2rem 0;
+    background: white;
+}
+
+.company-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.company-profile-text {
+    padding-right: 1.5rem;
+}
+
+.company-profile-text p:first-child {
+    margin-top: 0;
+}
+
+.company-profile-text p:last-child {
+    margin-bottom: 0;
+}
+
+.company-illustration {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.company-illustration-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* ============================================
+   Key Features Section (About Us Page)
+   ============================================ */
+
+.key-features-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.feature-icon-blue {
+    background: #e3f2fd;
+}
+
+.feature-icon-orange {
+    background: #ffe0b2;
+}
+
+.feature-icon-green {
+    background: #c8e6c9;
+}
+
+.feature-icon-purple {
+    background: #e1bee7;
+}
+
+.feature-icon-text {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.feature-icon-blue .feature-icon-text {
+    color: #1565c0;
+}
+
+.feature-icon-orange .feature-icon-text {
+    color: #e65100;
+}
+
+.feature-icon-green .feature-icon-text {
+    color: #2e7d32;
+}
+
+.feature-icon-purple .feature-icon-text {
+    color: #6a1b9a;
+}
+
+.feature-card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.feature-card-description {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #666;
+    text-align: center;
+    margin: 0;
+}
+
+/* ============================================
+   Key Strengths Section (About Us Page)
+   ============================================ */
+
+.key-strengths-section {
+    padding: 2.5rem 0;
+    background: white;
+}
+
+.strength-card {
+    background: linear-gradient(90deg, #e3f2fd 0%, #ffffff 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.strength-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.strength-icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.strength-icon-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1565c0;
+}
+
+.strength-card-content {
+    flex: 1;
+}
+
+.strength-card-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.75rem;
+}
+
+.strength-card-description {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+}
+
+/* ============================================
+   Why Referrals Page Styles
+   ============================================ */
+
+.why-referrals-section {
+    padding: 2rem 0;
+    background: white;
+}
+
+.why-referrals-intro {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #666;
+    max-width: 800px;
+}
+
+.why-referral-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.why-referral-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.why-referral-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.why-referral-icon-target {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.why-referral-icon-lightning {
+    background: #fff3e0;
+    color: #f57c00;
+}
+
+.why-referral-icon-money {
+    background: #e8f5e9;
+    color: #388e3c;
+}
+
+.why-referral-icon-document {
+    background: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.why-referral-icon-globe {
+    background: #e0f2f1;
+    color: #00796b;
+}
+
+.why-referral-icon-shield {
+    background: #e1f5fe;
+    color: #0277bd;
+}
+
+.why-referral-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.75rem;
+}
+
+.why-referral-description {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+@media (max-width: 991px) {
+    .section-main-title {
+        font-size: 2rem;
+    }
+    
+    .company-illustration {
+        height: 300px;
+        margin-top: 2rem;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .company-profile-section,
+    .key-features-section,
+    .key-strengths-section,
+    .why-referrals-section,
+    .vision-hero-section,
+    .vision-pillars-section,
+    .vision-goals-section {
+        padding: 2rem 0;
+    }
+    
+    .section-main-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .company-description {
+        font-size: 0.9rem;
+    }
+    
+    .company-illustration {
+        height: 250px;
+    }
+    
+    .feature-card,
+    .strength-card {
+        padding: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .feature-icon-circle {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.75rem;
+    }
+    
+    .strength-icon-circle {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .feature-icon-text {
+        font-size: 1rem;
+    }
+    
+    .strength-icon-text {
+        font-size: 1.125rem;
+    }
+    
+    .feature-card-title {
+        font-size: 0.95rem;
+    }
+    
+    .strength-card-title {
+        font-size: 1rem;
+    }
+    
+    .feature-card-description,
+    .strength-card-description {
+        font-size: 0.8rem;
+    }
+}
+

@@ -1,0 +1,40 @@
+@* App Download CTA Section - Reusable Component *@
+
+<section class="cta-section">
+    <div class="container">
+        <div class="row cta-section-inner align-items-center">
+            <div class="col-lg-6 col-md-6 l-pd">
+                <div>
+                    <h6 class="app-download-title">@Title</h6>
+                    <p>@Description</p>
+                    <div class="app-store-badges">
+                        <a href="@PlayStoreLink" class="app-badge-link" target="_blank" rel="noopener noreferrer">
+                            <img src="/assets/android-app_sh.png" alt="Get it on Google Play" class="app-badge-img" />
+                        </a>
+                        <a href="@AppStoreLink" class="app-badge-link" target="_blank" rel="noopener noreferrer">
+                            <img src="/assets/ios-app_sh.png" alt="Download on the App Store" class="app-badge-img" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 text-center">
+                <img src="/assets/cta-banners.png" alt="Recommended Professional Roles" class="cta-banner-img" />
+            </div>
+        </div>
+    </div>
+</section>
+
+@code {
+    [Parameter]
+    public string Title { get; set; } = "Manage Hiring and Referrals Anytime, Anywhere";
+
+    [Parameter]
+    public string Description { get; set; } = "Stay updated on job postings, referrals, candidate progress, and rewards with real-time notifications all from one powerful app.";
+
+    [Parameter]
+    public string PlayStoreLink { get; set; } = "#";
+
+    [Parameter]
+    public string AppStoreLink { get; set; } = "#";
+}
+

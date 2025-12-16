@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Recruitment.AdminWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f3c3f8b102ecdbc33f590bc90afd35e244bc4be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0539876235a81996bae56dc0efea9bd6312065a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Recruitment.AdminWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Recruitment.AdminWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
