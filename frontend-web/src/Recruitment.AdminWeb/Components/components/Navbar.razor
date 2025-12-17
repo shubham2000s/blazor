@@ -1,5 +1,7 @@
 @* Top navigation bar matching the design exactly *@
 @rendermode InteractiveServer
+@implements IDisposable
+@inject NavigationManager NavigationManager
 
 <nav class="custom-navbar navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
@@ -11,42 +13,59 @@
             <span class="navbar-tagline text-muted">Good Referrals - Good Careers</span>
         </a>
 
-        @* Mobile Toggle Button *@
-        <button class="navbar-toggler @(isMenuOpen ? "" : "collapsed")" 
+        @* Mobile Toggle Button - Shows hamburger or X based on menu state *@
+        <button class="navbar-toggler @(isMenuOpen ? "menu-open" : "collapsed")" 
                 type="button" 
                 @onclick="ToggleMenu"
                 aria-controls="navbarNav" 
                 aria-expanded="@isMenuOpen.ToString().ToLower()" 
                 aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            @if (isMenuOpen)
+            {
+                @* Close Icon (X) *@
+                <svg class="toggle-icon close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            }
+            else
+            {
+                @* Hamburger Icon (3 bars) *@
+                <svg class="toggle-icon hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            }
         </button>
 
         @* Navigation Links *@
         <div class="navbar-collapse @(isMenuOpen ? "show" : "collapse")" id="navbarNav">
+            
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <NavLink href="/about/about-us" class="nav-link" @onclick="CloseMenu">About Us</NavLink>
+                    <NavLink href="/about/about-us" class="nav-link">About Us</NavLink>
                 </li>
                 <li class="nav-item">
-                    <NavLink href="/about/why-referrals" class="nav-link" @onclick="CloseMenu">Why Referrals</NavLink>
+                    <NavLink href="/about/why-referrals" class="nav-link">Why Referrals</NavLink>
                 </li>
                 <li class="nav-item">
-                    <NavLink href="/about/our-vision" class="nav-link" @onclick="CloseMenu">Our Vision</NavLink>
+                    <NavLink href="/about/our-vision" class="nav-link">Our Vision</NavLink>
                 </li>
                 <li class="nav-item">
-                    <NavLink href="/about/our-values" class="nav-link" @onclick="CloseMenu">Our Values</NavLink>
+                    <NavLink href="/about/our-values" class="nav-link">Our Values</NavLink>
                 </li>
                 <li class="nav-item">
-                    <NavLink href="/about/our-leadership" class="nav-link" @onclick="CloseMenu">Our Leadership</NavLink>
+                    <NavLink href="/about/our-leadership" class="nav-link">Our Leadership</NavLink>
                 </li>
                 <li class="nav-item">
-                    <NavLink href="/about/contact-us" class="nav-link" @onclick="CloseMenu">Contact Us</NavLink>
+                    <NavLink href="/about/contact-us" class="nav-link">Contact Us</NavLink>
                 </li>
             </ul>
 
             @* Action Buttons (Right) *@
             <div class="navbar-actions d-flex gap-2">
-                <NavLink href="/login" class="btn btn-get-started" @onclick="CloseMenu">Login</NavLink>
+                <NavLink href="/login" class="btn btn-get-started">Login</NavLink>
             </div>
         </div>
     </div>
@@ -61,13 +80,34 @@
 @code {
     private bool isMenuOpen = false;
 
+    protected override void OnInitialized()
+    {
+        NavigationManager.LocationChanged += OnLocationChanged;
+    }
+
     private void ToggleMenu()
     {
         isMenuOpen = !isMenuOpen;
+        StateHasChanged();
     }
 
     private void CloseMenu()
     {
         isMenuOpen = false;
+        StateHasChanged();
+    }
+
+    private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        if (isMenuOpen)
+        {
+            isMenuOpen = false;
+            InvokeAsync(StateHasChanged);
+        }
+    }
+
+    public void Dispose()
+    {
+        NavigationManager.LocationChanged -= OnLocationChanged;
     }
 }
